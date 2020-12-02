@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tablero</title>
+</head>
+
+<body>
+    <script>
+      let filas=parseInt(prompt("Introduzca el número de filas de su tablero deseado"))
+        let columnas=filas
+        let texto=""
+        for (let b=1;b<=filas;b=b+1) {
+            for (let i=1;i<=columnas;i=i+1) {
+                if ((i+b)%2!=0){
+                texto= (texto+"X")
+                }
+            else {
+            texto= (texto+"O")
+            }
+        }
+  console.log(texto)
+  texto=""
+    }
+    </script>
+</body>
+
+</html>
